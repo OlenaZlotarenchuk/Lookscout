@@ -1,0 +1,31 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&::before {
+		@extend %ic;
+	}
+}
+
+[class*="_icon-"] {
+	&::after {
+		@extend %ic;
+	}
+}
+
+._icon-check:before {
+	content: "\ea10";
+}
+._icon-arrow-right:after {
+	content: "\ea3c";
+	font-size: toRem(12);
+	height: toRem(10);
+}
+  

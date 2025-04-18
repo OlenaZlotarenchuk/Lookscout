@@ -1,0 +1,46 @@
+//<BUTTONS 
+
+.button {
+    display: inline-block;
+	text-align: center;
+	padding: toRem(12) toRem(18);
+	background-color: var(--primary-600);
+	border-radius: toRem(6);
+    color: var(--white);
+    font-size: toRem(16);
+	font-weight: 600;
+    line-height: toRem(22);
+    text-transform: capitalize;
+    box-shadow: 0 1px 0 rgba(16, 24, 40, 0.04);
+    transition: all 0.4s ease 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+            background-color: var(--white);
+            color: var(--primary-600);
+		}
+	}
+
+	&--fw {
+		width: 100%;
+	}
+}
+
+.link {
+    color: var(--white);
+    font-size: toRem(16);
+	font-weight: 600;
+    line-height: toRem(22);
+    transition: color 0.3s ease 0s;
+
+    &--capitalize {
+        text-transform: capitalize;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: var(--primary-300);
+        }
+	}
+}
+
